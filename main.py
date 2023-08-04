@@ -3,7 +3,7 @@ from flask_cors import CORS
 from pymongo import MongoClient
 
 app = Flask(__name__)
-CORS(app, resources={r"/calculate_premium": {"origins": "*"}})
+CORS(app)
 
 # MongoDB setup
 
